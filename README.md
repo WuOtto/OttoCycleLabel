@@ -9,6 +9,7 @@
 
 使用方法
 ```
+//设置label的frame和数据源
 OttoCycleLabel *label = [[OttoCycleLabel alloc] initWithFrame:CGRectMake(0, 100, MainWidth, 20) texts:_dataArr];
 label.timeInterval = 0.5;//设置滚动的时间间隔
 label.backgroundColor = [UIColor clearColor];
