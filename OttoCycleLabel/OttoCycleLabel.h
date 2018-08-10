@@ -28,4 +28,7 @@ extern const  NSTimeInterval BeginTime;
 - (instancetype)initWithFrame:(CGRect)frame texts:(NSArray *)textsArr;
 
 - (void)startCycling;
+
+- (void)stopCycling;
+
 @end

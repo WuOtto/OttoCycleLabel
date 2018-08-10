@@ -92,6 +92,9 @@ const NSTimeInterval BeginTime = 1.0;
     [self performSelector:@selector(startCycling) withObject:nil afterDelay:_interval];
 }
 
+- (void)stopCycling{
+    [[self class] cancelPreviousPerformRequestsWithTarget:self selector:@selector(startCycling) object:nil];
+}
 
 #pragma mark - setter
 - (void)setTimeInterval:(NSTimeInterval)timeInterval {
