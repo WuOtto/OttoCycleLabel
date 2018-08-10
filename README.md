@@ -1,13 +1,14 @@
 # CycleLabel
-循环滚动的label控件
-[可自定义设置不同的时间间隔](!http://ouem5hcj9.bkt.clouddn.com/OttoCycleLabelDemo_1.gif)
+一个循环滚动的label控件
+![可自定义设置不同的时间间隔](http://ouem5hcj9.bkt.clouddn.com/OttoCycleLabelDemo_1.gif)
 
 >
 >同样的时间间隔，不同的方向演示如下
 
 ![效果演示](http://ouem5hcj9.bkt.clouddn.com/OttoCycleLabelDemo_2.gif)
 
-使用方法
+## 使用方法
+
 ```
 //设置label的frame和数据源
 OttoCycleLabel *label = [[OttoCycleLabel alloc] initWithFrame:CGRectMake(0, 100, MainWidth, 20) texts:_dataArr];
@@ -20,4 +21,9 @@ label.textColor = [UIColor colorWithRed:0.5 green:0.5 blue:1 alpha:1];
 
 [self.view addSubview:label];
 [label startCycling];//开始滚动
+```
+
+### 停止滚动
+```
+[label stopCycling];
 ```
